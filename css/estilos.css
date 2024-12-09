@@ -139,7 +139,7 @@ hr{
     margin-bottom: 10px;
     display: block;
     margin: 0 auto;
-    width: 300px;
+    width: 200px;
   }
   
   footer {
@@ -192,10 +192,11 @@ main {
 }
 
 .resources-section {
-    display: flex;
+    display: grid;
     flex-direction: column;
     gap: 20px;
     height: 100%;
+
 }
 
 .resource-item {
@@ -204,6 +205,8 @@ main {
     border-radius: 10px;
     background-color: #f9f9f9;
     width: 90%;
+    grid-template-columns: 1fr 1fr;
+    gap:10px;
     
 
 }
@@ -238,6 +241,11 @@ video {
     margin-top: 10px;
 }
 
+.vid{
+    padding-block: initial;
+
+    
+}
 footer {
     text-align: center;
     padding: 100px;
@@ -324,7 +332,6 @@ a:hover {
     text-decoration: underline;
 }
 .btn {
-    display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #f2f2a6;
@@ -334,35 +341,3 @@ a:hover {
   .btn:hover {
     background-color: #f8eca9;
   }
-  form {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #f2f2a6;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-form label {
-    margin-right: 10px;
-    font-weight: bold;
-}
-
-form input {
-    margin-right: 20px;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-form button {
-    padding: 5px 15px;
-    background-color: #ddd;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #ccc;
-}
